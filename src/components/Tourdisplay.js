@@ -39,7 +39,7 @@ function Display(){
     return (
         <div className="tour-list">
             <h1 className="title">Tours</h1>
-            <button id="tour-item-para-rec6d6T3q5EBIdCfD" onClick={handleShowmore} className="show-more">Show more/See less</button>
+            <button id="see-more-rec6d6T3q5EBIdCfD"  onClick={handleShowmore} className="show-more">Show more/See less</button>
             <button onClick={handleRefesh} className="btn">Refresh</button>
             {
                  reload ? (
@@ -48,7 +48,7 @@ function Display(){
                  (
                    !isEmpty ? ( card.map((item,index) =>{
                         return (
-                            <div className="single-tour">
+                            <div id="tour-item-para-rec6d6T3q5EBIdCfD" className="single-tour">
                                 <img src={item.image}></img>
                                 <p>{item.name}</p>
                                 <p className="tour-info">{item.info}</p>
