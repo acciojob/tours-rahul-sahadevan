@@ -11,7 +11,7 @@ function Display(){
         console.log(showmore)
         if(showmore === false){
             setShowmore(true);
-            setCard(card.slice(0,2));
+            setCard(card.slice(0,4));
         }
         else{
             setShowmore(false);
