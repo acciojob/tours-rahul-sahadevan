@@ -40,12 +40,12 @@ function Display() {
       ) : !isEmpty ? (
         card.map((item, index) => {
           return (
-            <div key={index} className="single-tour">
+            <div id="tour-item-para-rec6d6T3q5EBIdCfD" key={index} className="single-tour">
               <img src={item.image} alt={item.name} />
               <p>{item.name}</p>
               <p className="tour-info">{showmore[index] ? null : item.info}</p>
               <p className="tour-price">{item.price}</p>
-              <button onClick={() => handleDelete(index)} className="delete-btn">
+              <button id="delete-btn-rec6d6T3q5EBIdCfD" onClick={() => handleDelete(index)} className="delete-btn">
                 Delete
               </button>
               <button
